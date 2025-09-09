@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My parachute — Sebastian Roy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+--bg: #0b0f15;
+--panel: #121826;
+--text: #e6edf3;
+--muted: #9aa4b2;
+--accent: #7c3aed;
+--accent-2: #22d3ee;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: radial-gradient(80% 60% at 10% 10%, rgba(124,58,237,0.12), transparent 40%), radial-gradient(60% 50% at 90% 20%, rgba(34,211,238,0.12), transparent 40%), var(--bg); color: var(--text); font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+.container { max-width: 1100px; margin: 0 auto; padding: 24px 24px 32px; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.brand { font-weight: 800; letter-spacing: .5px; }
+.nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+.nav a { color: var(--muted); text-decoration: none; padding: 8px 12px; border-radius: 10px; transition: all .2s ease; font-size: 14px; white-space: nowrap; }
+.nav a:hover { color: var(--text); background: #1f2937; }
+.h1 { font-size: 36px; margin: 0 0 8px; }
+.section-title { font-size: 20px; margin: 16px 0 8px; color: #cbd5e1; }
+.p { color: var(--muted); font-size: 16px; line-height: 1.6; margin: 0; white-space: pre-line; }
+.grid { display: grid; gap: 16px; }
+.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.card { background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 10px 30px rgba(0,0,0,0.35); backdrop-filter: blur(12px); border-radius: 16px; padding: 14px; }
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0; color: var(--muted); }
+.image { width: 100%; border-radius: 12px; object-fit: cover; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
+@media (max-width: 1000px) { .grid-2 { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { header { flex-direction: column; gap: 16px; align-items: flex-start; } .nav { justify-content: flex-start; } }
+@media (max-width: 600px) { .nav a { font-size: 12px; padding: 6px 10px; } }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a class="brand" href="index.html">Sebastian Roy</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+<a href="#contact">Contact</a>
+<a href="parachute.html">My parachute</a>
+<a href="stories.html">My Star Stories</a>
+<a href="linkedin.html">LinkedIn</a>
+<a href="self-introduction.html">Self Introduction</a>
+</nav>
+</header>
+
+<div class="grid grid-2">
+<div class="card">
+<h1 class="h1">My parachute</h1>
+<h2 class="section-title">REFLECTION</h2>
+<p class="p">The flower exercise helped me reflect on my strengths, values, and career goals as an HR professional. It showed me that I work best in inclusive and supportive environments where collaboration, fairness, and employee well-being are valued. I also realized how important my skills in communication, conflict resolution, and structured planning are in building strong employee relations.</p>
+<p class="p" style="margin-top: 16px;">This activity further reminded me that my ultimate aim is to become a trusted partner in enhancing workplace culture and contributing to long-term organizational success. It also emphasized the need for continuous professional growth while maintaining a healthy work-life balance. Overall, the exercise gave me clarity about the kind of role and environment where I can thrive and make the most impact.</p>
+</div>
+<div class="card">
+<img class="image" src="tree.jpg" alt="Tree" />
+</div>
+</div>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LinkedIn — Sebastian Roy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+--bg: #0b0f15;
+--panel: #121826;
+--text: #e6edf3;
+--muted: #9aa4b2;
+--accent: #7c3aed;
+--accent-2: #22d3ee;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: radial-gradient(80% 60% at 10% 10%, rgba(124,58,237,0.12), transparent 40%), radial-gradient(60% 50% at 90% 20%, rgba(34,211,238,0.12), transparent 40%), var(--bg); color: var(--text); font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+.container { max-width: 1100px; margin: 0 auto; padding: 24px 24px 32px; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.brand { font-weight: 800; letter-spacing: .5px; }
+.nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+.nav a { color: var(--muted); text-decoration: none; padding: 8px 12px; border-radius: 10px; transition: all .2s ease; font-size: 14px; white-space: nowrap; }
+.nav a:hover { color: var(--text); background: #1f2937; }
+.h1 { font-size: 36px; margin: 0 0 8px; }
+.p { color: var(--muted); font-size: 16px; line-height: 1.6; margin: 0 0 16px; }
+.grid { display: grid; gap: 16px; }
+.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.card { background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 10px 30px rgba(0,0,0,0.35); backdrop-filter: blur(12px); border-radius: 16px; padding: 14px; }
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0; color: var(--muted); }
+.linkedin-image { width: 100%; max-width: 800px; height: auto; border-radius: 12px; object-fit: cover; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
+.linkedin-link { 
+    display: inline-block; 
+    background: linear-gradient(90deg, #0077b5, #005885); 
+    color: white; 
+    text-decoration: none; 
+    padding: 12px 24px; 
+    border-radius: 12px; 
+    font-weight: 600; 
+    transition: transform .06s ease, box-shadow .2s ease; 
+    margin-top: 16px;
+}
+.linkedin-link:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 8px 24px rgba(0,119,181,0.35); 
+}
+@media (max-width: 1000px) { .grid-2 { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { header { flex-direction: column; gap: 16px; align-items: flex-start; } .nav { justify-content: flex-start; } }
+@media (max-width: 600px) { .nav a { font-size: 12px; padding: 6px 10px; } }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a class="brand" href="index.html">Sebastian Roy</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+<a href="#contact">Contact</a>
+<a href="parachute.html">My parachute</a>
+<a href="stories.html">My Star Stories</a>
+<a href="linkedin.html">LinkedIn</a>
+<a href="self-introduction.html">Self Introduction</a>
+</nav>
+</header>
+
+<div style="display: flex; justify-content: center; align-items: center; min-height: 60vh;">
+<a href="https://www.linkedin.com/in/sebastian-roy-69a287278/" target="_blank" rel="noopener" style="text-decoration: none;">
+<img class="linkedin-image" src="LinkedIn.jpg" alt="LinkedIn Profile - Click to visit" style="cursor: pointer; transition: transform 0.2s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
+</a>
+</div>
+</div>
+</body>
+</html>

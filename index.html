@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sebastian Roy — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+--bg: #0b0f15;
+--panel: #121826;
+--text: #e6edf3;
+--muted: #9aa4b2;
+--accent: #7c3aed;
+--accent-2: #22d3ee;
+}
+* { box-sizing: border-box; }
+html, body {
+margin: 0;
+height: 100%;
+background: radial-gradient(80% 60% at 10% 10%, rgba(124,58,237,0.12), transparent 40%),
+radial-gradient(60% 50% at 90% 20%, rgba(34,211,238,0.12), transparent 40%),
+var(--bg);
+color: var(--text);
+font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.container {
+max-width: 1100px;
+margin: 0 auto;
+padding: 24px 24px 32px;
+}
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 24px;
+}
+.brand {
+font-weight: 800;
+letter-spacing: 0.5px;
+}
+.nav {
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+justify-content: flex-end;
+}
+.nav a {
+color: var(--muted);
+text-decoration: none;
+padding: 8px 12px;
+border-radius: 10px;
+transition: all .2s ease;
+font-size: 14px;
+white-space: nowrap;
+}
+.nav a:hover {
+color: var(--text);
+background: #1f2937;
+}
+.hero {
+display: grid;
+grid-template-columns: 1.2fr 1fr;
+gap: 24px;
+align-items: center;
+}
+.card {
+background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+border: 1px solid rgba(255,255,255,0.08);
+box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+backdrop-filter: blur(12px);
+border-radius: 16px;
+padding: 20px;
+}
+.h1 {
+font-size: 40px;
+line-height: 1.15;
+margin: 0 0 12px;
+}
+.p {
+color: var(--muted);
+font-size: 16px;
+line-height: 1.6;
+margin: 0 0 16px;
+}
+.cta {
+display: flex;
+gap: 12px;
+}
+.button {
+appearance: none;
+border: 0;
+padding: 12px 18px;
+border-radius: 12px;
+cursor: pointer;
+font-weight: 600;
+transition: transform .06s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+text-decoration: none;
+}
+.button-primary {
+background: linear-gradient(90deg, var(--accent), var(--accent-2));
+color: white;
+box-shadow: 0 8px 24px rgba(124,58,237,0.35);
+}
+.button-ghost {
+background: transparent;
+color: var(--text);
+border: 1px solid rgba(255,255,255,0.15);
+}
+.button:active { transform: translateY(1px); }
+.portrait {
+width: 100%;
+aspect-ratio: 1 / 1;
+border-radius: 16px;
+object-fit: cover;
+object-position: center 75%;
+border: 1px solid rgba(255,255,255,0.08);
+box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+.footer {
+margin-top: 48px;
+color: var(--muted);
+font-size: 14px;
+text-align: center;
+}
+@media (max-width: 900px) {
+.hero { grid-template-columns: 1fr; }
+header { flex-direction: column; gap: 16px; align-items: flex-start; }
+.nav { justify-content: flex-start; }
+}
+@media (max-width: 600px) {
+.nav a { font-size: 12px; padding: 6px 10px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="brand">Sebastian Roy</div>
+<nav class="nav">
+<a href="about.html" role="button">About</a>
+<a href="resume.pdf" role="button" target="_blank" rel="noopener">Resume</a>
+<a href="parachute.html" role="button">My parachute</a>
+<a href="stories.html" role="button">My Star Stories</a>
+<a href="linkedin.html" role="button">LinkedIn</a>
+<a href="self-introduction.html" role="button">Self Introduction</a>
+<a href="#contact" role="button">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="card">
+<h1 class="h1">Hi, I'm Sebastian Roy</h1>
+<p class="p">I am Sebastian Roy, pursuing my Master of Hospitality and Tourism Management (MHTM) student with a strong interest in pursuing a career in Human Resources. My academic background, along with hands-on exposure to hospitality operations, has strengthened my interpersonal, organizational, and problem-solving skills. I am passionate about employee engagement, talent development, and building positive workplace cultures within the hospitality industry. </p>
+<div class="cta">
+<a class="button button-primary" href="about.html">About Me</a>
+<button class="button button-ghost" onclick="location.href='#contact'">Contact Me</button>
+</div>
+</div>
+<img class="portrait" src="image.jpg" alt="Sebastian Roy" />
+</section>
+
+<p id="about" class="footer">About and Contact sections are placeholders. Replace with your details.</p>
+</div>
+</body>
+</html>

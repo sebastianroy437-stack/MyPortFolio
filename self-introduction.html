@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Self Introduction — Sebastian Roy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0b0f15;
+  --panel: #121826;
+  --text: #e6edf3;
+  --muted: #9aa4b2;
+  --accent: #7c3aed;
+  --accent-2: #22d3ee;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  height: 100%;
+  background: radial-gradient(80% 60% at 10% 10%, rgba(124,58,237,0.12), transparent 40%),
+              radial-gradient(60% 50% at 90% 20%, rgba(34,211,238,0.12), transparent 40%),
+              var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  overflow: hidden; /* no scroll */
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  margin-bottom: 10px;
+}
+.brand { font-weight: 800; letter-spacing: .5px; }
+.nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 10px;
+  transition: all .2s ease;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.nav a:hover { color: var(--text); background: #1f2937; }
+
+.video-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-box {
+  background: var(--panel);
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.45);
+  width: 500px;     /* smaller fixed width */
+  max-width: 80vw;  /* still responsive */
+}
+.video-box video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  .nav a { font-size: 12px; padding: 5px 8px; }
+  .video-box { width: 90%; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a class="brand" href="index.html">Sebastian Roy</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="parachute.html">My parachute</a>
+<a href="stories.html">My Star Stories</a>
+<a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+<a href="linkedin.html">LinkedIn</a>
+<a href="self-introduction.html">Self Introduction</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="video-wrapper">
+  <div class="video-box">
+    <video controls>
+      <source src="selfintroduction.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+</div>
+</body>
+</html>

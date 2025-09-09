@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Sebastian Roy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root {
+--bg: #0b0f15;
+--panel: #121826;
+--text: #e6edf3;
+--muted: #9aa4b2;
+--accent: #7c3aed;
+--accent-2: #22d3ee;
+}
+* { box-sizing: border-box; }
+html, body {
+margin: 0;
+background: radial-gradient(80% 60% at 10% 10%, rgba(124,58,237,0.12), transparent 40%),
+radial-gradient(60% 50% at 90% 20%, rgba(34,211,238,0.12), transparent 40%),
+var(--bg);
+color: var(--text);
+font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 24px 24px 32px; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.brand { font-weight: 800; letter-spacing: .5px; }
+.nav { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+.nav a { color: var(--muted); text-decoration: none; padding: 8px 12px; border-radius: 10px; transition: all .2s ease; font-size: 14px; white-space: nowrap; }
+.nav a:hover { color: var(--text); background: #1f2937; }
+.h1 { font-size: 36px; margin: 0 0 8px; }
+.p { color: var(--muted); font-size: 16px; line-height: 1.6; margin: 0 0 16px; }
+.section-title { font-size: 20px; margin: 20px 0 8px; color: #cbd5e1; }
+.grid { display: grid; gap: 16px; }
+.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.card { background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 10px 30px rgba(0,0,0,0.35); backdrop-filter: blur(12px); border-radius: 16px; padding: 14px; }
+.card h3 { margin: 0 0 6px; font-size: 18px; }
+.card p { margin: 0; color: var(--muted); }
+@media (max-width: 1000px) { .grid-3 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 700px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { header { flex-direction: column; gap: 16px; align-items: flex-start; } .nav { justify-content: flex-start; } }
+@media (max-width: 600px) { .nav a { font-size: 12px; padding: 6px 10px; } }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<a class="brand" href="index.html">Sebastian Roy</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+<a href="#contact">Contact</a>
+<a href="parachute.html">My parachute</a>
+<a href="stories.html">My Star Stories</a>
+<a href="linkedin.html">LinkedIn</a>
+<a href="self-introduction.html">Self Introduction</a>
+</nav>
+</header>
+
+<h1 class="h1">About Me</h1>
+<p class="p">As a Master of Hospitality and Tourism Management (MHTM) student, I am driven by a passion for Human Resource Management within the hospitality industry. My academic journey has provided me with a strong foundation in hospitality operations, leadership, and service excellence, while my internship experience has given me practical insights into organizational processes and people management. With a keen interest in HR, I aim to specialize in areas such as recruitment, training and development, employee relations, and performance management. I aspire to contribute to creating an inclusive, motivated, and high-performing workforce that supports both employee well-being and organizational success.</p>
+
+<h2 class="section-title">Personal Skills</h2>
+<ul style="color: var(--muted); line-height: 1.8; margin: 0 0 24px 18px;">
+    <li>Communication and Interpersonal Skill</li>
+    <li>Fast Learner</li>
+    <li>Leadership Quality</li>
+    <li>Problem Solving and Stress Management</li>
+</ul>
+
+<h2 class="section-title">Education</h2>
+<div class="grid grid-2">
+<div class="card"><h3>10th Grade</h3><p>Montfort School, Anakkara - 2018</p></div>
+<div class="card"><h3>12th Grade</h3><p>Montfort School, Anakkara - 2020</p></div>
+<div class="card"><h3>Degree</h3><p>Bachelors of Hotel Management (BHM), St. Joseph's Instituite of Hotel Management and Catering Technology, Pala - 2024</p></div>
+<div class="card"><h3>Currently Pursuing</h3><p>Masters in Hospitality and Tourism Management (MHTM), Marian College Kuttikkanam 24-26 Batch</p></div>
+</div>
+
+<h2 class="section-title">Work Experience</h2>
+<div class="grid grid-3">
+<div class="card"><h3>Industrial Exposure Training</h3><p>The Ritz-Carlton, Banglore - 6 months</p></div>
+<div class="card"><h3>Outdoor Catering</h3><p>INS Vikrant Mark 2 Launching Ceremony, Kochi</p></div>
+<div class="card"><h3>Kerala Travel Mart</h3><p>Volunteering for the event for 3 days.</p></div>
+<div class="card"><h3>Internship</h3><p>Crown Plaza, Kochi, Purchase Department, 1 month</p></div>
+<div class="card"><h3>Internship</h3><p>Taj Kumarakom Resort and Spa, Kerala - Finance and HR Department - 2 Months</p></div>
+
+
+
+
+
+</div>
+</div>
+</body>
+</html>
